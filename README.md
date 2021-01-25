@@ -12,16 +12,16 @@ This example highlights some of the key components of working with us. We use th
 
 ### Assignment Requirements
 
-* Create a project that implements an API from here: https://docs.opendota.com
+* Create a project that implements an API from here:  https://gorest.co.in/
 * The project must include
-  * A list of players by rank
-  * Detail view of each player
+  * A list of products
+  * Detail view of each product
     * Detail view should consist of a minimum of an image, a title, and a description
   * Should be able to navigate between the list and detail view
   * Write tests where possible
 * Bonus Points
   * Searching/filtering data in the list
-  * List pagination if greater than 50 items or lazy-load
+  * List pagination if greater than 20 items or lazy-load
   * Additional views
   
 ### Assignment Submission
