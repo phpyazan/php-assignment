@@ -14,17 +14,17 @@ class App
             }
             if ($status) {
                 ob_start();
-                include_once __DIR__ . "/../views/{$path}.php";
+                require_once __DIR__ . "/../views/{$path}.php";
                 return ob_get_clean();
             } else {
-                include_once __DIR__ . "/../views/{$path}.php";
+                require_once __DIR__ . "/../views/{$path}.php";
             }
         }
     }
     public function load_library($className)
     {
         if (file_exists(__DIR__ . "/../libraries/{$className}.php")) {
-            include_once __DIR__ . "/../libraries/{$className}.php";
+            require_once __DIR__ . "/../libraries/{$className}.php";
         }
     }
     public static function uri_segment($param = false)

@@ -19,7 +19,7 @@ class Router extends App
                     $className = ucfirst($params[0]);
                     $methodName = $params[1];
                     if (file_exists(__DIR__ . "/../controllers/{$className}.php")) {
-                        include_once __DIR__ . "/../controllers/{$className}.php";
+                        require_once __DIR__ . "/../controllers/{$className}.php";
                         if (class_exists($className)) {
                             $class = new $className;
                             if (method_exists($class, $methodName)) {
@@ -42,7 +42,7 @@ class Router extends App
                     $className = ucfirst($params[0]);
                     $methodName = $params[1];
                     if (file_exists(__DIR__ . "/../controllers/{$className}.php")) {
-                        include_once __DIR__ . "/../controllers/{$className}.php";
+                        require_once __DIR__ . "/../controllers/{$className}.php";
                         if (class_exists($className)) {
                             $class = new $className;
                             if (method_exists($class, $methodName)) {
