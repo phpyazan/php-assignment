@@ -6,7 +6,7 @@ class Router extends App
 
     public function __construct()
     {
-        self::$url = $this->uri_segment(1);
+        self::$url = rtrim($this->uri_segment(1), ".php");
     }
     public static function get($url = null, $callback = null)
     {
